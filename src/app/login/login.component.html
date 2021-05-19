@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-2 card mx-auto my-5">
+        <div class="card-body">
+            <form *ngIf="!isRouted" [formGroup]='profileForm' (ngSubmit)="onSubmit()">
+                <label>
+                    <p>username</p>
+                    <input class="mt-1" type="text" formControlName='userName'>
+                </label>
+                <label>
+                    <p>password</p>
+                    <input class="mt-1" type="password" formControlName='passWord'>
+                </label>
+                <P><button class="mt-2 mx-5" type="submit">Login</button></P>
+            </form>
+        </div>
+    </div>
+</div>

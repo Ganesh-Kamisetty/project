@@ -1,0 +1,67 @@
+<!-- <div id="myChart"></div> -->
+<div class="row">
+    <div class="card col-md-2 p-2 m-2">
+        <img class="mimages" src="../../assets/roohi.jpg">
+        <div class="card-body">
+            <button class="btn btn-primary" (click)="showDetails()">details</button>
+            <button class="btn btn-primary mx-3" (click)="addToCart()">Add to cart</button>
+            <div *ngIf="isShow">
+                <div *ngFor="let item of roohi">
+                    <p>MovieID : {{item.movieid}}</p>
+                    <p>Cast : {{item.cast1}} and {{item.cast2}}</p>
+                    <p>Director : {{item.director}}</p>
+                    <p>Language : {{item.language}}</p>
+                    <p>Production Name : {{item.productionname}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-2 p-2 m-2">
+        <img class="mimages" src="../../assets/mumbaiSaga.jpg">
+        <div class="card-body">
+            <button class="btn btn-primary" (click)="showDetails1()">details</button>
+            <button class="btn btn-primary mx-3" (click)="addToCart()">Add to cart</button>
+            <div *ngIf="isShow1">
+                <div *ngFor="let item of mumbai">
+                    <p>MovieID : {{item.movieid}}</p>
+                    <p>Cast : {{item.cast1}} and {{item.cast2}}</p>
+                    <p>Director : {{item.director}}</p>
+                    <p>Language : {{item.language}}</p>
+                    <p>Production Name : {{item.productionname}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-2 p-2 m-2">
+        <img class="mimages" src="../../assets/krack.jpg">
+        <div class="card-body">
+            <button class="btn btn-primary" (click)="showDetails2()">details</button>
+            <button class="btn btn-primary mx-3" (click)="addToCart()">Add to cart</button>
+            <div *ngIf="isShow2" >
+                <div *ngFor="let item of krack">
+                    <p>MovieID : {{item.movieid}}</p>
+                    <p>Cast : {{item.cast1}} and {{item.cast2}}</p>
+                    <p>Director : {{item.director}}</p>
+                    <p>Language : {{item.language}}</p>
+                    <p>Production Name : {{item.productionname}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-2 p-2 m-2">
+        <img class="mimages" src="../../assets/uppena.jpg">
+        <div class="card-body">
+            <button class="btn btn-primary" (click)="showDetails3()">details</button>
+            <button class="btn btn-primary mx-3" (click)="addToCart()">Add to cart</button>
+            <div *ngIf="isShow3">
+                <div *ngFor="let item of uppena">
+                    <p>MovieID : {{item.movieid}}</p>
+                    <p>Cast : {{item.cast1}} and {{item.cast2}}</p>
+                    <p>Director : {{item.director}}</p>
+                    <p>Language : {{item.language}}</p>
+                    <p>Production Name : {{item.productionname}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
